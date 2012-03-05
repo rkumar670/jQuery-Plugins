@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC
+		"-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>$.toggleList()</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script src="../.toggleList.js" type="text/javascript"></script>
+	<script src="./script.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<h1>$.toggleList()</h1>
+
+<div class="one">
+	<h3>Toggle list using <i>[target, index, callback]</i>:</h3>
+
+	<ul class="ul1">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+
+	<ul class="ul2">
+		<li class="active">1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+
+    <pre>
+    &lt;script type="text/javascript"&gt;
+    $(function() {
+        $('.ul1 > li').toggleList({
+            target: $('.ul2 > li'),
+            callback: function(target, i) {
+                target.css('background', ['#CEEDF1', '#3DDD80', '#ECFF6A'][i]);
+            }
+        });
+    });
+    &lt;/script&gt;
+
+    &lt;ul class="ul1"&gt;
+        &lt;li&gt;1&lt;/li&gt;
+        &lt;li&gt;2&lt;/li&gt;
+        &lt;li&gt;3&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;ul class="ul2"&gt;
+        &lt;li class="active"&gt;1&lt;/li&gt;
+        &lt;li&gt;2&lt;/li&gt;
+        &lt;li&gt;3&lt;/li&gt;
+    &lt;/ul&gt;
+    </pre>
+</div>
+
+<div class="two">
+	<h3>Toggle list using <i>[target, class, type, event, callback]</i>:</h3>
+
+	<ul class="ul1">
+		<li class="foo">1</li>
+		<li class="bar">2</li>
+		<li class="baz">3</li>
+	</ul>
+
+	<ul class="ul2">
+		<li class="foo active">1</li>
+		<li class="bar">2</li>
+		<li class="baz">3</li>
+	</ul>
+
+    <pre>
+    &lt;script type="text/javascript"&gt;
+    $(function() {
+        $('.ul2 > li').toggleList({
+            target: $('.ul2 > li'),
+            type: 'class',
+            event: 'mouseover',
+            callback: function(target, i) {
+                target.css('background', ['#CEEDF1', '#3DDD80', '#ECFF6A'][i]);
+            }
+        });
+    });
+    &lt;/script&gt;
+
+    &lt;ul class="ul1"&gt;
+        &lt;li class="foo active" &gt;1&lt;/li&gt;
+        &lt;li class="bar" &gt;2&lt;/li&gt;
+        &lt;li class="baz" &gt;3&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;ul class="ul2"&gt;
+        &lt;li class="foo active"&gt;1&lt;/li&gt;
+        &lt;li class="bar" &gt;2&lt;/li&gt;
+        &lt;li class="baz" &gt;3&lt;/li&gt;
+    &lt;/ul&gt;
+    </pre>
+</div>
+
+</body>
+</html>

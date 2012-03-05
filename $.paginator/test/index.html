@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC
+        "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>$.paginator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../$.paginator.js" type="text/javascript"></script>
+    <script src="./script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<h1>$.paginator</h1>
+
+<div>
+    <div id="paginator"></div>
+
+    <ul>
+        <li><b>Current page:</b> <span>1</span></li>
+        <li><b>Current URL:</b> <span>http://example.com/1</span></li>
+    </ul>
+
+    <pre>
+    &lt;script type="text/javascript"&gt;
+    $(function() {
+        $('#paginator').paginator({
+            ajax: function (current, url) {
+                var li = $('li span');
+                li.eq(0).text(current);
+                li.eq(1).text(url);
+            },
+            pages: 100,
+            stack: 10,
+            current: 1,
+            url: 'http://example.com/',
+            markup: 1
+        });
+    });
+    &lt;/script&gt;
+
+    &lt;div id="paginator"&gt;&lt;/div&gt;
+
+    &lt;style type="text/css"&gt;
+    /*
+    -------------------------------
+    PAGINATION
+    -------------------------------
+    */
+    
+    #paginator {
+        width: 354px;
+    }
+    
+    #paginator table {
+        border-collapse: collapse;
+        overflow: visible;
+        table-layout: fixed;
+        width: 100%;
+    }
+    
+    #paginator table td {
+        padding: 0px;
+        white-space: nowrap;
+        text-align: center;
+    }
+    
+    #paginator p, #paginator a {
+        display: block;
+        color: #333;
+        margin: 0px;
+        position: relative;
+        padding: 2px 6px;
+    }
+    
+    #paginator a:hover {text-decoration: underline;}
+    #paginator td p {background: #E8E8E8;}
+    #paginator .scrollbar div, #paginator .scrollbar div p {position: absolute;}
+    
+    #paginator .scrollbar {
+        border-top: 4px solid #333;
+        height: 20px;
+        position: relative;
+        margin-top: 10px;
+    }
+    
+    #paginator .scrollbar div {
+        background: #3697E6;
+        width: 0px;
+        height: 4px;
+        top: -4px;
+        left: 0px;
+        z-index: 2;
+    }
+    
+    #paginator .scrollbar div p {
+        background: url('./scroll.png') 50% 50% no-repeat;
+        cursor: default;
+        top: -9px;
+        left: 50%;
+        margin-left: -14px;
+        width: 18px;
+        height: 17px;
+    }
+
+    &lt;/style&gt;
+    </pre>
+</div>
+
+</body>
+</html>

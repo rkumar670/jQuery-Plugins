@@ -1,0 +1,76 @@
+body {
+	font: 14px/18px arial,tahoma, verdana, serif;
+}
+
+pre {
+	overflow: hidden;
+}
+
+pre {
+	background: #FCFCF8;
+	border: 1px dashed #7D7676;
+	clear: both;
+	color: #480E0C;
+	width: 636px;
+}
+
+/*
+-------------------------------
+PAGINATION
+-------------------------------
+*/
+
+#paginator {
+	width: 354px;
+}
+
+#paginator table {
+	border-collapse: collapse;
+	overflow: visible;
+	table-layout: fixed;
+	width: 100%;
+}
+
+#paginator table td {
+	padding: 0px;
+	white-space: nowrap;
+	text-align: center;
+}
+
+#paginator p, #paginator a {
+	display: block;
+	color: #333;
+	margin: 0px;
+	position: relative;
+	padding: 2px 6px;
+}
+
+#paginator a:hover {text-decoration: underline;}
+#paginator td p {background: #E8E8E8;}
+#paginator .scrollbar div, #paginator .scrollbar div p {position: absolute;}
+
+#paginator .scrollbar {
+	border-top: 4px solid #333;
+	height: 20px;
+	position: relative;
+	margin-top: 10px;
+}
+
+#paginator .scrollbar div {
+	background: #3697E6;
+	width: 0px;
+	height: 4px;
+	top: -4px;
+	left: 0px;
+	z-index: 2;
+}
+
+#paginator .scrollbar div p {
+	background: url('./scroll.png') 50% 50% no-repeat;
+	cursor: default;
+	top: -9px;
+	left: 50%;
+	margin-left: -14px;
+	width: 18px;
+	height: 17px;
+}
