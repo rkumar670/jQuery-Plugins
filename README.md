@@ -19,6 +19,9 @@ A small list of jQuery plugins for the daily work
 **$.preload**<br />
 *This method provides a way to preload images*<br />
 
+**$.queryURL()**<br />
+*Returns the parameters of the current or specified URL<br />
+
 **.attributes**<br />
 *Returns an unsorted {object} of the attributes*<br />
 [Example] (http://monolithed.github.com/jQuery-Plugins/.attributes/test/index.html)<br />
