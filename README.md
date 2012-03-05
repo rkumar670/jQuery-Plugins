@@ -20,7 +20,7 @@ A small list of jQuery plugins for the daily work
 *This method provides a way to preload images*<br />
 
 **$.queryURL()**<br />
-*Returns the parameters of the current or specified URL<br />
+*Returns the parameters of the current or specified URL*<br />
 
 **.attributes**<br />
 *Returns an unsorted {object} of the attributes*<br />
