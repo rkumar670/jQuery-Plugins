@@ -19,6 +19,6 @@ Replace each class name in the set of matched elements
 	$('.class').replaceClass('old_class1 old_class2', 'new_class1 new_class2');
 
 * License
-    The toCSS module is licensed under the MIT (MIT_LICENSE.txt) license.
+    The .replaceClass() module is licensed under the MIT (MIT_LICENSE.txt) license.
 
 * Copyright (c) 2011 [Alexander Guinness] (https://github.com/monolithed)

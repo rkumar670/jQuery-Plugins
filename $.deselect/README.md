@@ -12,6 +12,6 @@ This module provides a complex deselection and can be used for drag & drop funct
 	});
 
 * License
-    The toCSS module is licensed under the MIT (MIT_LICENSE.txt) license.
+    The $.hasAttr module is licensed under the MIT (MIT_LICENSE.txt) license.
 
 * Copyright (c) 2011 [Alexander Guinness] (https://github.com/monolithed)

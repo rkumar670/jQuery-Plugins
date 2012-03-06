@@ -79,6 +79,6 @@ This module provides the .toggleList() method that binds two blocks by event
 	</ul>
 
 * License
-    The toCSS module is licensed under the MIT (MIT_LICENSE.txt) license.
+    The .toggleList() module is licensed under the MIT (MIT_LICENSE.txt) license.
 
 * Copyright (c) 2011 [Alexander Guinness] (https://github.com/monolithed)

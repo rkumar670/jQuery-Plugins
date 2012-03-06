@@ -23,6 +23,6 @@ Adds a class for each element in the set of matched elements and removes all sib
 	});
 
 * License
-    The toCSS module is licensed under the MIT (MIT_LICENSE.txt) license.
+    The $.toggleSiblings() module is licensed under the MIT (MIT_LICENSE.txt) license.
 
 * Copyright (c) 2011 [Alexander Guinness] (https://github.com/monolithed)

@@ -36,6 +36,6 @@ Example 3:
 
 
 * License
-    The toCSS module is licensed under the MIT (MIT_LICENSE.txt) license.
+    The $.queryURL() module is licensed under the MIT (MIT_LICENSE.txt) license.
 
 * Copyright (c) 2011 [Alexander Guinness] (https://github.com/monolithed)

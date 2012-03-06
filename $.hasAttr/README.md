@@ -10,6 +10,6 @@ Determine whether any of the matched elements are assigned the given attribute.
 	$('body').hasAttr('class');
 
 * License
-    The toCSS module is licensed under the MIT (MIT_LICENSE.txt) license.
+    The $.deselect() module is licensed under the MIT (MIT_LICENSE.txt) license.
 
 * Copyright (c) 2011 [Alexander Guinness] (https://github.com/monolithed)

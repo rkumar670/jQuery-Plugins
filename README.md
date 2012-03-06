@@ -54,6 +54,6 @@ A small list of jQuery plugins for the daily work
 [Example] (http://monolithed.github.com/jQuery-Plugins/.toggleValue/test/index.html)<br />
 
 * License
-    The toCSS module is licensed under the MIT (MIT_LICENSE.txt) license
+    The Query Plugins is licensed under the MIT (MIT_LICENSE.txt) license
 
 * Copyright (c) 2011 [Alexander Guinness] (https://github.com/monolithed)

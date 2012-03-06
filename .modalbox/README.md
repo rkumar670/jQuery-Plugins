@@ -12,6 +12,6 @@ An implementation of non-standard modal window
 	});
 
 * License
-    The toCSS module is licensed under the MIT (MIT_LICENSE.txt) license.
+    The .modalbox() module is licensed under the MIT (MIT_LICENSE.txt) license.
 
 * Copyright (c) 2011 [Alexander Guinness] (https://github.com/monolithed)

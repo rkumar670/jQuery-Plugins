@@ -34,8 +34,9 @@ Toggle input type
     });
     </script>
 
-   <input type="button" class="text" value="click" />
+	<input type="button" class="text" value="click" />
+
 * License
-    The toCSS module is licensed under the MIT (MIT_LICENSE.txt) license.
+    The .toggleType() module is licensed under the MIT (MIT_LICENSE.txt) license.
 
 * Copyright (c) 2011 [Alexander Guinness] (https://github.com/monolithed)

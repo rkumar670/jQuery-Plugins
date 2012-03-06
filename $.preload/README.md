@@ -14,6 +14,6 @@ This method provides a way to preload images.
 	$.preload('./img1, ./img2');
 
 * License
-    The toCSS module is licensed under the MIT (MIT_LICENSE.txt) license.
+    The $.preload() module is licensed under the MIT (MIT_LICENSE.txt) license.
 
 * Copyright (c) 2011 [Alexander Guinness] (https://github.com/monolithed)
