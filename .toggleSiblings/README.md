@@ -2,13 +2,12 @@
 
 Adds a class for each element in the set of matched elements and removes all siblings (except active).
 
-## Use
-*For example you could use the following code:*
-
-**Prototype**
+**Synopsis**
 
 	.toggleSiblings(className, [,Element]);
 
+## Use
+*For example you could use the following code:*
 
 *Implicit indication of the element*
 
