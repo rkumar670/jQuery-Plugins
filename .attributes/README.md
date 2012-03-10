@@ -7,18 +7,24 @@ Returns an unsorted {object} of the attributes
 
 **Markup:**
 
-	<div data-attr="foo" class="bar" />
+```html
+<div data-attr="foo" class="bar" />
+```
 
 **Call:**
 
-	$('#id').attributes();
+```javascript
+$('#id').attributes();
+```
 
 **Result:**
 
-	{
-		data-attr: 'foo',
-		class: 'bar'
-	}
+```javascript
+{
+	data-attr: 'foo',
+	class: 'bar'
+}
+```
 
 * License
     The .attributes() module is licensed under the MIT (MIT_LICENSE.txt) license.

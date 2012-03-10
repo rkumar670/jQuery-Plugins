@@ -9,31 +9,36 @@ Returns the parameters of the current or specified URL
 
 Example 1:
 
-	$.queryURL()
-
+```javascript
+$.queryURL()
+```
 *Result:*
 
-	{foo="1", bar="2"}
+```javascript
+{foo="1", bar="2"}
+```
 
 Example 2:
 
-	$.queryURL('foo')
-
+```javascript
+$.queryURL('foo')
+```
 *Result:*
 
 	1
 
 Example 3:
 
-	$.queryURL({
-		param: 'foo',
-		query: 'foo=1&bar=2'
-	}
+```javascript
+$.queryURL({
+	param: 'foo',
+	query: 'foo=1&bar=2'
+}
+```
 
 *Result:*
 
 	1
-
 
 * License
     The $.queryURL() module is licensed under the MIT (MIT_LICENSE.txt) license.

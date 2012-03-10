@@ -4,22 +4,28 @@ Adds a class for each element in the set of matched elements and removes all sib
 
 **Synopsis**
 
-	.toggleSiblings(className, [,Element]);
+```javascript
+.toggleSiblings(className, [,Element]);
+```
 
 ## Use
 *For example you could use the following code:*
 
 *Implicit indication of the element*
 
-	$('div').click(function() {
-		return $(this).toggleSiblings('active');
-	});
+```javascript
+$('div').click(function() {
+	return $(this).toggleSiblings('active');
+});
+```
 
 *Explicit indication of the element*
 
-	$('div').click(function() {
-		return $(this).toggleSiblings('active', 'a');
-	});
+```javascript
+$('div').click(function() {
+	return $(this).toggleSiblings('active', 'a');
+});
+```
 
 * License
     The $.toggleSiblings() module is licensed under the MIT (MIT_LICENSE.txt) license.

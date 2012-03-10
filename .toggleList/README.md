@@ -7,51 +7,63 @@ This module provides the .toggleList() method that binds two blocks by event
 
 **target:**
 
-	$('.ul1 > li').toggleList({
-		target: $('.ul2 > li')
-	});
+```javascript
+$('.ul1 > li').toggleList({
+	target: $('.ul2 > li')
+});
+```
 
 **callback:**
 
-	$('.ul1 > li').toggleList({
-		target: $('.ul2 > li'),
-		callback: function(target, index) {
-			console.log(target, index);
-		}
-	});
+```javascript
+$('.ul1 > li').toggleList({
+	target: $('.ul2 > li'),
+	callback: function(target, index) {
+		console.log(target, index);
+	}
+});
+```
 
 **prevent:**
 
-	$('.ul1 > li').toggleList({
-		target: $('.ul2 > li'),
-		prevent: flase
-	});
+```javascript
+$('.ul1 > li').toggleList({
+	target: $('.ul2 > li'),
+	prevent: flase
+});
+```
 
 **event:**
 
-	$('.ul1 > li').toggleList({
-		target: $('.ul2 > li'),
-		event: 'mouseover'
-	});
+```javascript
+$('.ul1 > li').toggleList({
+	target: $('.ul2 > li'),
+	event: 'mouseover'
+});
+```
 
 **prevent:**
 
-	$('.ul1 > li').toggleList({
-		target: $('.ul2 > li'),
-		prevent: flase
-	});
-
+```javascript
+$('.ul1 > li').toggleList({
+	target: $('.ul2 > li'),
+	prevent: flase
+});
+```
 **type:**
 
-	$('.ul1 > li').toggleList({
-		target: $('.ul2 > li'),
-		type: 'class' //index by default
-	});
+```javascript
+$('.ul1 > li').toggleList({
+	target: $('.ul2 > li'),
+	type: 'class' //index by default
+});
+```
 
 **markup:**
 
 *Toggle by index*
 
+```html
 	<ul class="ul1">
 		<li>1</li>
 		<li>2</li>
@@ -63,9 +75,11 @@ This module provides the .toggleList() method that binds two blocks by event
 		<li>2</li>
 		<li>3</li>
 	</ul>
+```
 
 *Toggle by class name*
 
+```html
 	<ul class="ul1">
 		<li class="foo">1</li>
 		<li class="bar">2</li>
@@ -77,6 +91,7 @@ This module provides the .toggleList() method that binds two blocks by event
 		<li class="bar">2</li>
 		<li class="baz">3</li>
 	</ul>
+```
 
 * License
     The .toggleList() module is licensed under the MIT (MIT_LICENSE.txt) license.

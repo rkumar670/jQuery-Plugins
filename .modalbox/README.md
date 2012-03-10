@@ -4,25 +4,29 @@ An implementation of non-standard modal window
 
 **Synopsis**
 
-	$.modalbox ([,{
-		title: '',
-		fade: 400,
-		css: {
-			with: this.width()
-			height: this.width()
-		},
-		callback: null
-	}]);
+```javascript
+$.modalbox ([,{
+	title: '',
+	fade: 400,
+	css: {
+		with: this.width()
+		height: this.width()
+	},
+	callback: null
+}]);
+```
 
 ## Use
 *For example you could use the following code:*
 
-	$('input[type="button"]').click(function() {
-		$('.block').modalbox({
-			title: 'Welcome!',
-			fade : 1000
-		});
+```javascript
+$('input[type="button"]').click(function() {
+	$('.block').modalbox({
+		title: 'Welcome!',
+		fade : 1000
 	});
+});
+```
 
 * License
     The .modalbox() module is licensed under the MIT (MIT_LICENSE.txt) license.

@@ -7,7 +7,9 @@ Determine whether any of the matched elements are assigned the given attribute.
 
 **target:**
 
-	$('body').hasAttr('class');
+```javascript
+$('body').hasAttr('class');
+```
 
 * License
     The $.deselect() module is licensed under the MIT (MIT_LICENSE.txt) license.

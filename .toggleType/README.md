@@ -7,34 +7,38 @@ Toggle input type
 
 **Change type via trigger:**
 
-    <script type="text/javascript">
-    $(function() {
-        $('.checkbox').click(function() {
-            $(this).toggleType($('.password')); //type password used by defualt
-        });
+```html
+<script type="text/javascript">
+$(function() {
+    $('.checkbox').click(function() {
+        $(this).toggleType($('.password')); //type password used by defualt
     });
-    </script>
+});
+</script>
 
-    <input type="password" class="password" value="password" />
-    <input type="checkbox" class="checkbox" value="" />
+<input type="password" class="password" value="password" />
+<input type="checkbox" class="checkbox" value="" />
+```
 
  **Change own type:**
 
-    <script type="text/javascript">
-    $(function() {
-      $('.text').click(function() {
-         $(this).toggleType({
-               type: 'text',
-               element: $(this),
-               callback: function(a) {
-                  alert('Ok!');
-               }
-            });
-      });
-    });
-    </script>
+```html
+<script type="text/javascript">
+$(function() {
+  $('.text').click(function() {
+     $(this).toggleType({
+           type: 'text',
+           element: $(this),
+           callback: function(a) {
+              alert('Ok!');
+           }
+        });
+  });
+});
+</script>
 
-	<input type="button" class="text" value="click" />
+<input type="button" class="text" value="click" />
+```
 
 * License
     The .toggleType() module is licensed under the MIT (MIT_LICENSE.txt) license.

@@ -7,9 +7,11 @@ This module provides a complex deselection and can be used for drag & drop funct
 
 **target:**
 
-	$(document).mousemove(function() {
-		$.deselect();
-	});
+```javascript
+$(document).mousemove(function() {
+	$.deselect();
+});
+```
 
 * License
     The $.hasAttr module is licensed under the MIT (MIT_LICENSE.txt) license.

@@ -4,12 +4,16 @@ Sets or retrieves the object and its content in HTML
 
 **Synopsis**
 
-	$.fn.outerHTML();
+```javascript
+$.fn.outerHTML();
+```
 
 ## Use
 *For example you could use the following code:*
 
-	$('body').outerHTML();
+```javascript
+$('body').outerHTML();
+```
 
 * License
     The .outerHTML() module is licensed under the MIT (MIT_LICENSE.txt) license.

@@ -7,7 +7,9 @@ Filters elements of an array and returns only the existing HTML Elements
 
 **target:**
 
-	$(['#foo', '#bar', 'etc..']).exists();
+```javascript
+$(['#foo', '#bar', 'etc..']).exists();
+```
 
 * License
     The $.exists() module is licensed under the MIT (MIT_LICENSE.txt) license.

@@ -7,11 +7,15 @@ This method provides a way to preload images.
 
 **Example 1:**
 
-	$.preload(['./img1', './img2']);
+```javascript
+$.preload(['./img1', './img2']);
+```
 
 **Example 1:**
 
-	$.preload('./img1, ./img2');
+```javascript
+$.preload('./img1, ./img2');
+```
 
 * License
     The $.preload() module is licensed under the MIT (MIT_LICENSE.txt) license.
