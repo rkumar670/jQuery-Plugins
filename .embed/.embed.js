@@ -4,36 +4,51 @@
 	 * Returns a cross-browser <object /> tag to embed the flash video in html code
 	 * Use:
 	 * $('body').embed({
-			name: 'foo',
-			id: 'foo',
-			html: '<param value="always" name="AllowScriptAccess">',
-			data: './file.swf',
-			width: '100',
-			height: '100'
-	 * });
+	 *		name: 'foo',
+	 *		id: 'foo',
+	 *		html: '<a href="#">link</a>',
+	 *		data: './file.swf',
+	 *		width: '100',
+	 *		height: '100'
+	 * }, {
+	 *		wmode: 'transparent',
+	 *		AllowScriptAccess: 'always'
+	 *	});
+	 );
 	 *
 	 * @author: Alexander Guinness
 	 * @version: 1.0
-	 * @param: {Object} options
+	 * @param: {Object} options - <object /> data
+	 * @param: {Object} params - <param /> data
 	 * @this: {jQuery Object}
 	 * @return Object
 	 * @license MIT
 	 * @date: Mon Apr 02 23:00:00 2012
 	 **/
 
-	$.fn.embed = function (options) {
-		if (!$.isPlainObject(options) || $.isEmptyObject(options))
-			return this;
+	$.fn.embed = function (object, params) {
+		var is = function(object) {
+			return !$.isPlainObject(object) || $.isEmptyObject(object);
+		},
 
-		var params = $.extend({
+		//extend default params
+		object = $.extend({
 			type: 'application/x-shockwave-flash',
 			data: ''
-		}, options);
+		}, object);
 
-		if (params.data) {
-			$('<object />', params).appendTo(this).attr('data', params.data)
-			.append('<param value="' + params.data + '" name="movie" />');
-		}
+		if (is(object) && !data)
+			return this;
+
+		var param = ['<param value="' + object.data + '" name="movie" />'];
+
+		//add <param /> elements
+		!is(params) && $.each(params, function(name, value) {
+			param.push('<param value="' + name + '" name="' + value + '" />');
+		});
+		
+		//create <object /> elements
+		$('<object />', object).appendTo(this).attr('data', object.data).append(param.join(''));
 
 		return this;
 	};
