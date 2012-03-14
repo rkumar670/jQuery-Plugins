@@ -17,7 +17,7 @@
 	 );
 	 *
 	 * @author: Alexander Guinness
-	 * @version: 1.0
+	 * @version: 1.1
 	 * @param: {Object} options - <object /> data
 	 * @param: {Object} params - <param /> data
 	 * @this: {jQuery Object}
@@ -40,13 +40,13 @@
 		if (is(object) && !data)
 			return this;
 
-		var param = ['<param value="' + object.data + '" name="movie" />'];
+		var param = [];
 
 		//add <param /> elements
-		!is(params) && $.each(params, function(name, value) {
+		$.each($.extend({movie: object.data}, params), function(name, value) {
 			param.push('<param name="' + name + '" value="' + value + '" />');
 		});
-		
+
 		//create <object /> elements
 		$('<object />', object).appendTo(this).attr('data', object.data).append(param.join(''));
 
