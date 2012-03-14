@@ -17,7 +17,7 @@
 	 );
 	 *
 	 * @author: Alexander Guinness
-	 * @version: 1.1
+	 * @version: 1.2
 	 * @param: {Object} options - <object /> data
 	 * @param: {Object} params - <param /> data
 	 * @this: {jQuery Object}
@@ -27,20 +27,15 @@
 	 **/
 
 	$.fn.embed = function (object, params) {
-		var is = function(object) {
-			return !$.isPlainObject(object) || $.isEmptyObject(object);
-		},
-
-		//extend default params
-		object = $.extend({
-			type: 'application/x-shockwave-flash',
-			data: ''
-		}, object);
-
-		if (is(object) && !data)
+		if (!$.isPlainObject(object) || $.isEmptyObject(object))
 			return this;
 
-		var param = [];
+		var object = $.extend({
+			type: 'application/x-shockwave-flash',
+			data: ''
+		}, object),
+
+		param = [];
 
 		//add <param /> elements
 		$.each($.extend({movie: object.data}, params), function(name, value) {
