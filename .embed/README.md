@@ -20,7 +20,7 @@ $('body').embed({
 
 **Result:**
 
-```javascript
+```html
 <object type="application/x-shockwave-flash" name="foo" id="foo" style="width: 100px; height: 100px;" data="./file.swf">
 	<param name="AllowScriptAccess" value="always">
 	<param name="movie" value="./file.swf">
