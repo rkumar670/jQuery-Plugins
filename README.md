@@ -16,11 +16,14 @@ A small list of jQuery plugins for the daily work
 **$.preload**<br />
 *This method provides a way to preload images*<br />
 
-**$.queryURL()**<br />
+**$.queryURL**<br />
 *Returns the parameters of the current or specified URL*<br />
 
 **.attributes**<br />
 *Returns an unsorted {object} of the attributes*<br />
+
+**.embed**<br />
+*Returns a cross-browser <object /> tag to embed the flash video in html code*
 
 **.exists**<br />
 *Filters elements of an array and returns only the existing HTML Elements*<br />
