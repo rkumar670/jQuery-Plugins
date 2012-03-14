@@ -4,16 +4,16 @@
 	 * Returns a cross-browser <object /> tag to embed the flash video in html code
 	 * Use:
 	 * $('body').embed({
-	 *		name: 'foo',
-	 *		id: 'foo',
-	 *		html: '<a href="#">link</a>',
-	 *		data: './file.swf',
-	 *		width: '100',
-	 *		height: '100'
+	 *     name: 'foo',
+	 *     id: 'foo',
+	 *     html: '<a href="#">link</a>',
+	 *     data: './file.swf',
+	 *     width: '100',
+	 *     height: '100'
 	 * }, {
-	 *		wmode: 'transparent',
-	 *		AllowScriptAccess: 'always'
-	 *	});
+	 *     wmode: 'transparent',
+	 *     AllowScriptAccess: 'always'
+	 *});
 	 );
 	 *
 	 * @author: Alexander Guinness
