@@ -32,7 +32,7 @@ $('body').embed({
 ```html
 <object type="application/x-shockwave-flash" name="foo" id="foo" style="width: 100px; height: 100px;" data="./file.swf">
 	<param name="movie" value="./file.swf">
-	<param name="transparent" value="wmode">
+	<param name="wmode" value="transparent">
 	<param name="AllowScriptAccess" value="always">
 	<a href="#">link</a>
 </object>

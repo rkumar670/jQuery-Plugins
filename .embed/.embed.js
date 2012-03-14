@@ -44,7 +44,7 @@
 
 		//add <param /> elements
 		!is(params) && $.each(params, function(name, value) {
-			param.push('<param value="' + name + '" name="' + value + '" />');
+			param.push('<param name="' + name + '" value="' + value + '" />');
 		});
 		
 		//create <object /> elements
