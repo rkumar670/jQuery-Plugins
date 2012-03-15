@@ -9,7 +9,7 @@ $.modalbox ([,{
 	title: '',
 	fade: 400,
 	css: {
-		with: this.width()
+		width: this.width()
 		height: this.width()
 	},
 	callback: null

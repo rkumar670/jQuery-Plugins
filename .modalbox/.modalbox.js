@@ -39,7 +39,7 @@
 			callback : null,
 			fade: 400,
 			css: {
-				with: size(this.width()),
+				width: size(this.width()),
 				height: size(this.height())
 			}
 		}, options),
