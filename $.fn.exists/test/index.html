@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC
+		"-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>.exists()</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script src="../.exists.js" type="text/javascript"></script>
+	<script src="./script.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<h1>.exists()</h1>
+
+<div>
+	<input type="hidden" class="foo" />
+	<input type="hidden" class="bar" />
+	<input type="button" value="click" />
+
+    <pre>
+    &lt;script type="text/javascript"&gt;
+    $(function() {
+        alert($(['.foo', '.bar', '.baz']).exists());
+    });
+    &lt;/script&gt;
+
+    &lt;input type="hidden" class="foo" /&gt;
+    &lt;input type="hidden" class="bar" /&gt;
+    &lt;input type="button" value="click" /&gt;
+    </pre>
+</div>
+</body>
+</html>

@@ -22,34 +22,34 @@ A small list of jQuery plugins for the daily work
 **.attributes**<br />
 *Returns an unsorted {object} of the attributes*<br />
 
-**.embed**<br />
+**$.fn.embed**<br />
 *Returns a cross-browser <object /> tag to embed the flash video in html code*
 
-**.exists**<br />
+**$.fn.exists**<br />
 *Filters elements of an array and returns only the existing HTML Elements*<br />
 
-**.modalbox**<br />
+**$.fn.modalbox**<br />
 *An implementation of non-standard modal window*<br />
 
-**.outerHTML**<br />
+**$.fn.outerHTML**<br />
 *Sets or retrieves the object and its content in HTML*<br />
 
-**.replaceClass**<br />
+**$.fn.replaceClass**<br />
 *Replace each class name in the set of matched elements*<br />
 
-**.sendForm**<br />
+**$.fn.sendForm**<br />
 *Submitting a form fields*<br />
 
-**.toggleList**
+**$.fn.toggleList**
 *This module provides the .toggleList() method that binds two blocks by event*<br />
 
-**.toggleSiblings**<br />
+**$.fn.toggleSiblings**<br />
 *Adds a class for each element in the set of matched elements and removes all siblings (except active)*<br />
 
-**.toggleType**<br />
+**$.fn.toggleType**<br />
 *Toggle input type*<br />
 
-**.toggleValue**<br />
+**$.fn.toggleValue**<br />
 *This method intended to aid the user with data entry like [placeholder] (http://dev.w3.org/html5/spec/Overview.html#the-placeholder-attribute)*<br />
 
 * License
