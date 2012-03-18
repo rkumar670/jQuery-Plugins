@@ -22,8 +22,8 @@
 	**/
 
 	$.fn.replaceClass = function (original, recent) {
-		if (original || original)
-			this.removeClass(recent ? original : this.className).addClass(recent || original);
+	        var item = recent || original;
+		item && this.removeClass(recent ? original : this.className).addClass(item);
 		return this;
 	}
 })(jQuery);
