@@ -40,7 +40,7 @@ A small list of jQuery plugins for the daily work
 **$.fn.sendForm**<br />
 *Submitting a form fields*<br />
 
-**$.fn.toggleList**
+**$.fn.toggleList**<br />
 *This module provides the .toggleList() method that binds two blocks by event*<br />
 
 **$.fn.toggleSiblings**<br />
