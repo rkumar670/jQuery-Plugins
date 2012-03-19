@@ -52,6 +52,9 @@ A small list of jQuery plugins for the daily work
 **$.fn.toggleValue**<br />
 *This method intended to aid the user with data entry like [placeholder] (http://dev.w3.org/html5/spec/Overview.html#the-placeholder-attribute)*<br />
 
+
+##.
+
 * License
     The Query Plugins is licensed under the MIT (MIT_LICENSE.txt) license
 
