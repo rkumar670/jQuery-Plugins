@@ -88,33 +88,39 @@ $.cookie('name', '');
 
 * Domain=domain
 
-	domain: 'example.com'
-
+```
+domain: 'example.com'
+```
 Optional.  The Domain attribute specifies the domain for which the <br />
 cookie is valid.  An explicitly specified domain must always start <br />
 with a dot.
 
 * Max-Age=delta-seconds (Expires)
 
-	expires: 7
-
+```
+expires: 7
+```
 Optional. The Max-Age attribute defines the lifetime of the <br />
 cookie, in seconds.  The delta-seconds value is a decimal non- <br />
 negative integer.  After delta-seconds seconds elapse, the client <br />
 should discard the cookie.  A value of zero means the cookie <br />
 should be discarded immediately. <br />
 
+NOTE: use expires attribute, max-age is not supported by IE
+
 * Path=path
 
-	path: '/'
-
+```
+path: '/'
+```
 Optional.  The Path attribute specifies the subset of URLs to <br />
 which this cookie applies. <br />
 
 * Secure
 
-	secure: true
-
+```
+secure: true
+```
 Optional.  The Secure attribute (with no value) directs the user <br />
 agent to use only (unspecified) secure means to contact the origin <br />
 server whenever it sends back this cookie. <br />
