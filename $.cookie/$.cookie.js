@@ -73,10 +73,9 @@
 	 **/
 
 	$.cookie = function(name, value, options) {
-		var params = $.extend({
-		}, options || name);
+		var params = options || name,
 
-		var cookie = {
+		cookie = {
 			get: function(name) {
 				var map = $.map(document.cookie.split(';'), function(item) {
 					item = item.split('=');
