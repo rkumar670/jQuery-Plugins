@@ -84,22 +84,22 @@ $.cookie('name'); //['value1', 'value2']
 $.cookie('name', '');
 ```
 
-##Options in accordance with the RFC 2109
+##Options in accordance with the RFC 2965
+*NOTE: RFC 2165 is obsolete*
 
 * <b>Domain=domain</b>
 
 ```
 domain: 'example.com'
 ```
-Optional.  The Domain attribute specifies the domain for which the cookie is valid.  An explicitly specified domain must always start
-with a dot.
+Optional.  The value of the Domain attribute specifies the domain  for which the cookie is valid. If an explicitly specified value does not start with a dot, the user agent supplies a leading dot.
 
 * <b>Max-Age=delta-seconds (Expires)</b>
 
 ```
 expires: 7
 ```
-Optional. The Max-Age attribute defines the lifetime of the cookie, in seconds.  The delta-seconds value is a decimal non-negative integer.  After delta-seconds seconds elapse, the client should discard the cookie.  A value of zero means the cookie should be discarded immediately. <br />
+Optional. The value of the Max-Age attribute is delta-seconds, the lifetime of the cookie in seconds, a decimal non-negative integer. To handle cached cookies correctly, a client SHOULD calculate the age of the cookie according to the age calculation rules in the HTTP/1.1 specification [RFC2616]. When the age is greater than delta-seconds seconds, the client SHOULD discard the cookie. A value of zero means the cookie SHOULD be discarded immediately.<br />
 
 CAUTION: use expires attribute, max-age is not supported by IE
 
@@ -108,17 +108,21 @@ CAUTION: use expires attribute, max-age is not supported by IE
 ```
 path: '/'
 ```
-Optional.  The Path attribute specifies the subset of URLs to which this cookie applies.
+Optional. The value of the Path attribute specifies the subset of URLs on the origin server to which this cookie applies.
+
+* <b>Port[="portlist"]</b>
+
+```
+port: '80,8000'
+```
+Optional. 
 
 * <b>Secure</b>
 
 ```
 secure: true
 ```
-Optional.  The Secure attribute (with no value) directs the user agent to use only (unspecified) secure means to contact the origin <br />
-server whenever it sends back this cookie. <br />
-The user agent (possibly under the user's control) may determine what level of security it considers appropriate for "secure" cookies.  The Secure attribute should be considered security advice from the server to the user agent, indicating that it is in the session's interest to protect the cookie contents.
-
+Optional. The Secure attribute (with no value) directs the user agent to use only (unspecified) secure means to contact the origin server whenever it sends back this cookie, to protect the confidentially and authenticity of the information in the cookie.
 
 ##License
 The *$.cookie()* plugin is licensed under the MIT, BSD, GPL 2 licenses.
