@@ -66,7 +66,7 @@ $.cookie({
 ###Getting the cookie:
 
 ```javascript
-$.cookie('name'); //1
+$.cookie('name'); //value
 ```
 
 *if multiple names:*
