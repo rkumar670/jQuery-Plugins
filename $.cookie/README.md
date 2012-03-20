@@ -133,7 +133,7 @@ the session's interest to protect the cookie contents. <br />
 
 
 ##License
-The $.cookie() plugin is licensed under the MIT, BSD, GPL 2 licenses.
+The *$.cookie()* plugin is licensed under the MIT, BSD, GPL 2 licenses.
 
 
 * Copyright (c) 2012 [Alexander Guinness] (https://github.com/monolithed)
