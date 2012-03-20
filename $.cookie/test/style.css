@@ -1,0 +1,25 @@
+body {
+	font: 14px/18px arial,tahoma, verdana, serif;
+}
+
+h3 {
+	font: 600 16px/18px arial,tahoma, verdana, serif;
+}
+
+div, pre {
+	overflow: hidden;
+}
+
+input {
+	color: #333;
+	margin-right: 5px;
+}
+
+pre {
+	background: #FCFCF8;
+	border: 1px dashed #7D7676;
+	clear: both;
+	color: #480E0C;
+	margin: 50px 0;
+	width: 636px;
+}
