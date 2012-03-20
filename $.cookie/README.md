@@ -87,12 +87,27 @@ $.cookie('name', '');
 ##Options in accordance with the RFC 2965
 *NOTE: RFC 2165 is obsolete*
 
+* <b>Name</b>
+
+```
+name: 'example'
+```
+Requered. The name of the state information ("cookie") is NAME. NAMEs that begin with $ are reserved and MUST NOT be used by applications.
+
+* <b>Value</b>
+
+```
+value: 'example'
+```
+Requered. The VALUE is opaque to the user agent and may be anything the origin server chooses to send, possibly in a server-selected printable ASCII encoding. <br />
+The content may, in fact, be readable by anyone that examines the Set-Cookie2 header.
+
 * <b>Domain=domain</b>
 
 ```
 domain: 'example.com'
 ```
-Optional.  The value of the Domain attribute specifies the domain  for which the cookie is valid. If an explicitly specified value does not start with a dot, the user agent supplies a leading dot.
+Optional. The value of the Domain attribute specifies the domain  for which the cookie is valid. If an explicitly specified value does not start with a dot, the user agent supplies a leading dot.
 
 * <b>Max-Age=delta-seconds (Expires)</b>
 
