@@ -86,7 +86,7 @@ $.cookie('name', '');
 
 ##Options in accordance with the RFC 2109
 
-###Domain=domain
+* Domain=domain
 
 	domain: 'example.com'
 
@@ -94,7 +94,7 @@ Optional.  The Domain attribute specifies the domain for which the <br />
 cookie is valid.  An explicitly specified domain must always start <br />
 with a dot.
 
-###Max-Age=delta-seconds (Expires)
+* Max-Age=delta-seconds (Expires)
 
 	expires: 7
 
@@ -104,14 +104,14 @@ negative integer.  After delta-seconds seconds elapse, the client <br />
 should discard the cookie.  A value of zero means the cookie <br />
 should be discarded immediately. <br />
 
-###Path=path
+* Path=path
 
 	path: '/'
 
 Optional.  The Path attribute specifies the subset of URLs to <br />
 which this cookie applies. <br />
 
-###Secure
+* Secure
 
 	secure: true
 
