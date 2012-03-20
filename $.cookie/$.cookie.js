@@ -104,7 +104,7 @@
 				document.cookie = params.name.concat('=', encodeURIComponent(params.value), ';', map);
 			},
 
-			name: function(object) {
+			data: function(object) {
 				return Object.prototype.toString.call(object) === '[object Object]';
 			}
 		};
@@ -113,11 +113,11 @@
 			if (typeof name == 'string')
 				return cookie.get(name);
 
-			else if (cookie.name(name))
+			else if (cookie.data(name))
 				cookie.set();
 		}
 		else if (typeof name == 'string' && value) {
-			if (cookie.name(options)) {
+			if (cookie.data(options)) {
 				params.name = name;
 				params.value = value;
 				cookie.set();
