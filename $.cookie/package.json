@@ -1,0 +1,35 @@
+{
+    "name": "$.cookie",
+    "version": "1.0.0",
+    "title": "$.cookie()",
+    "author": {
+        "name": "Alexander Guinness",
+        "url": "https://github.com/monolithed"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/MIT"
+        },
+        {
+            "type": "GPL-2.0",
+            "url": "http://www.opensource.org/licenses/GPL-2.0"
+        },
+        {
+         "type": "BSD-2",
+         "url": "http://www.opensource.org/licenses/BSD-2-Clause"
+       },
+    ],
+    "dependencies": {
+        "jquery": "1"
+    },
+    "description": "This plugin provides the setting, getting and deleting cookies",
+    "keywords": [
+        "cookie",
+        "http"
+    ],
+    "homepage": "https://github.com/monolithed/jQuery-Plugins/tree/master/$.cookie",
+    "files": [
+        "$.cookie.js"
+    ]
+}
