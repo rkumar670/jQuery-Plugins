@@ -4,6 +4,9 @@ A small list of jQuery plugins for the daily work
 
 ## Description
 
+**$.cookie:**<br />
+*This plugin provides the setting, getting and deleting cookies<br />
+
 **$.deselect:**<br />
 *This module provides a complex deselection and can be used for drag & drop functions<br />
 
