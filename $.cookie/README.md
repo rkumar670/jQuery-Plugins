@@ -91,8 +91,7 @@ $.cookie('name', '');
 ```
 domain: 'example.com'
 ```
-Optional.  The Domain attribute specifies the domain for which the <br />
-cookie is valid.  An explicitly specified domain must always start <br />
+Optional.  The Domain attribute specifies the domain for which the cookie is valid.  An explicitly specified domain must always start
 with a dot.
 
 * <b>Max-Age=delta-seconds (Expires)</b>
@@ -100,11 +99,7 @@ with a dot.
 ```
 expires: 7
 ```
-Optional. The Max-Age attribute defines the lifetime of the <br />
-cookie, in seconds.  The delta-seconds value is a decimal non- <br />
-negative integer.  After delta-seconds seconds elapse, the client <br />
-should discard the cookie.  A value of zero means the cookie <br />
-should be discarded immediately. <br />
+Optional. The Max-Age attribute defines the lifetime of the cookie, in seconds.  The delta-seconds value is a decimal non-negative integer.  After delta-seconds seconds elapse, the client should discard the cookie.  A value of zero means the cookie should be discarded immediately. <br />
 
 CAUTION: use expires attribute, max-age is not supported by IE
 
@@ -113,23 +108,16 @@ CAUTION: use expires attribute, max-age is not supported by IE
 ```
 path: '/'
 ```
-Optional.  The Path attribute specifies the subset of URLs to <br />
-which this cookie applies. <br />
+Optional.  The Path attribute specifies the subset of URLs to which this cookie applies.
 
 * <b>Secure</b>
 
 ```
 secure: true
 ```
-Optional.  The Secure attribute (with no value) directs the user <br />
-agent to use only (unspecified) secure means to contact the origin <br />
+Optional.  The Secure attribute (with no value) directs the user agent to use only (unspecified) secure means to contact the origin <br />
 server whenever it sends back this cookie. <br />
-<br />
-The user agent (possibly under the user's control) may determine <br />
-what level of security it considers appropriate for "secure" <br />
-cookies.  The Secure attribute should be considered security <br />
-advice from the server to the user agent, indicating that it is in <br />
-the session's interest to protect the cookie contents. <br />
+The user agent (possibly under the user's control) may determine what level of security it considers appropriate for "secure" cookies.  The Secure attribute should be considered security advice from the server to the user agent, indicating that it is in the session's interest to protect the cookie contents.
 
 
 ##License
