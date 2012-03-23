@@ -67,7 +67,7 @@
 	 *    or or when cookies are set;
 	 *  - String, if only one parameter has been passed and it's a string
 	 *  - Array, if multiple names
-	 * @edition: RFC 2965
+	 * @edition: RFC 6265
 	 * @license: MIT, BSD, GPL 2
 	 * @date: Sat Apr 21 19:08:00 2012
 	 **/

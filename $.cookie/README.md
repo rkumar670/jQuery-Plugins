@@ -85,7 +85,6 @@ $.cookie('name', '');
 ```
 
 ##Options in accordance with the RFC 2965
-*NOTE: RFC 2165 is obsolete*
 
 * <b>Name</b>
 
@@ -139,8 +138,12 @@ secure: true
 ```
 Optional. The Secure attribute (with no value) directs the user agent to use only (unspecified) secure means to contact the origin server whenever it sends back this cookie, to protect the confidentially and authenticity of the information in the cookie.
 
+*NOTE: [RFC 2109] (http://tools.ietf.org/html/rfc2109) is obsoleted by [RFC 2965] (http://tools.ietf.org/html/rfc2965)*
+*NOTE: [RFC 2965] (http://tools.ietf.org/html/rfc2965) is obsoleted by [RFC 6265] (http://tools.ietf.org/html/rfc6265)*
+
+*READ: [RFC 2119] (http://tools.ietf.org/html/rfc2119)*
+
 ##License
 The *$.cookie()* plugin is licensed under the MIT, BSD, GPL 2 licenses.
-
 
 * Copyright (c) 2012 [Alexander Guinness] (https://github.com/monolithed)
