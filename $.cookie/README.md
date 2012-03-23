@@ -138,8 +138,8 @@ secure: true
 ```
 Optional. The Secure attribute (with no value) directs the user agent to use only (unspecified) secure means to contact the origin server whenever it sends back this cookie, to protect the confidentially and authenticity of the information in the cookie.
 
-*NOTE: [RFC 2109] (http://tools.ietf.org/html/rfc2109) is obsoleted by [RFC 2965] (http://tools.ietf.org/html/rfc2965)*
-*NOTE: [RFC 2965] (http://tools.ietf.org/html/rfc2965) is obsoleted by [RFC 6265] (http://tools.ietf.org/html/rfc6265)*
+*NOTE: [RFC 2109] (http://tools.ietf.org/html/rfc2109) is obsoleted by [RFC 2965] (http://tools.ietf.org/html/rfc2965)* <br />
+*NOTE: [RFC 2965] (http://tools.ietf.org/html/rfc2965) is obsoleted by [RFC 6265] (http://tools.ietf.org/html/rfc6265)* <br />
 
 *READ: [RFC 2119] (http://tools.ietf.org/html/rfc2119)*
 
