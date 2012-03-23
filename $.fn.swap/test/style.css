@@ -1,0 +1,36 @@
+body {
+	font: 14px/18px arial, tahoma, verdana, serif;
+}
+
+h3 {
+	font: 600 16px/18px arial, tahoma, verdana, serif;
+}
+
+div, pre {
+	overflow: hidden;
+}
+
+pre {
+	background: #FCFCF8;
+	border: 1px dashed #7D7676;
+	clear: both;
+	color: #480E0C;
+	margin-top: 40px;
+	width: 636px;
+}
+
+.one, .two {
+	color: #FFF;
+	font: 15px/36px arial, tahoma, verdana, serif;
+	text-align: center;
+	width: 160px;
+	height: 40px;
+}
+
+.one {
+	background: #FF4F4F;
+}
+
+.two {
+	background: #3D8F3C;
+}

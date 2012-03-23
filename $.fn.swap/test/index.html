@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC
+		"-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>$.fn.swap()</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+	<script src="../$.fn.swap.js" type="text/javascript"></script>
+	<script src="./script.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<h1>$.fn.swap()</h1>
+
+<div>
+	<input type="button" value="click" />
+
+	<p class="one">one</p>
+	<p class="two">two</p>
+
+    <pre>
+
+    &lt;script type="text/javascript"&gt;
+    $('input').click(function() {
+        $('.one').swap($('.two'));
+    });
+    &lt;/script&gt;
+
+    &lt;input type="button" value="click" /&gt;
+    </pre>
+</div>
+</body>
+</html>
