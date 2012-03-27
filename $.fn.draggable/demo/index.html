@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+   <title>$.fn.draggable()</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+   <script src="../$.fn.draggable.js" type="text/javascript"></script>
+   <script src="./script.js" type="text/javascript"></script>
+   <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<h1>$.fn.draggable()</h1>
+
+<div id="block">
+    <div id="xy">
+        <label>
+            <span>Top:</span>
+            <input type="text" id="top" value="0px" />
+        </label>
+        <label>
+            <span>Left:</span>
+            <input type="text" id="left" value="0px" />
+        </label>
+    </div>
+</div>
+
+<div id="block2">
+    <div id="x"><span>Axis: y</span></div>
+</div>
+
+<div id="block3">
+    <div id="y"><span>Axis: x</span></div>
+</div>
+
+
+
+<pre>
+    $(function() {
+        var position = function() {
+            var offset = $(this).offset();
+            $('#top').val((offset.top|0) + 'px');
+            $('#left').val((offset.left|0) + 'px');
+        };
+
+        //Axis: xy
+        $('#xy').draggable({
+            prevent: ['input'],
+            callback: {
+                start: position,
+                end: position
+            },
+            overflow: true
+        });
+
+        //Axis: y
+        $('#x').draggable({axis: 'x'});
+
+        //Axis: y
+        $('#y').draggable({
+            axis: 'y',
+            overflow: true
+        });
+    });
+</pre>
+
+
+</body>
+</html>

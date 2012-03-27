@@ -1,0 +1,67 @@
+body {
+	font: 14px/18px arial,tahoma, verdana, serif;
+}
+
+div, pre {
+	overflow: hidden;
+}
+
+pre {
+	background: #FCFCF8;
+	border: 1px dashed #7D7676;
+	clear: both;
+	color: #480E0C;
+	padding: 20px 0;
+	width: 839px;
+}
+
+#text {
+	border: 1px dashed #333;
+	padding: 20px;
+	margin: 15px 0;
+	width: 800px;
+}
+
+#block, #block2, #block3 {
+	float: left;
+	height: 140px;
+	width: 140px;
+}
+
+#xy, #xy input, #xy label, #y, #x {
+	overflow: hidden;
+	position: relative;
+}
+
+#xy, #y, #x {
+	color: #FFF;
+	cursor: move;
+	width: 120px;
+	height: 120px;
+}
+
+#y {background: #FF5990;}
+#x {background: #5EC4E6;}
+
+#xy {
+	background: #5EE68A;
+	padding-top: 1px;
+}
+
+#xy input {
+	border: 1px solid #ABABAB;
+	width: 80px;
+	height: 20px;
+}
+
+#xy label {
+	cursor: move;
+	display: block;
+	margin: 10px;
+}
+
+#x span, #y span {
+	display: block;
+	font: bold 14px/123px arial;
+	text-align: center;
+}
