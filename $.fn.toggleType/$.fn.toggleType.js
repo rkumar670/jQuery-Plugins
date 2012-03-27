@@ -21,9 +21,9 @@
 	 *
 	 * @author: Alexander Guinness
 	 * @version: 1.0
-	 * @options: {type} New type [optional]
-	 * @options: {element} Target Element [optional]
-	 * @options: {callback} Callback [optional]
+	 * @option: {type} New type [optional]
+	 * @option: {element} Target Element [optional]
+	 * @option: {callback} Callback [optional]
 	 * @this: {jQuery Object}
 	 * @return: {jQuery Object}
 	 * @date: San Jun 11 18:37:00 2011
@@ -33,7 +33,7 @@
 		var params = $.extend({
 			type: 'text',
 			element : null,
-			callback : null,
+			callback : null
 		}, options),
 
 		target = params.element || options;
@@ -47,7 +47,7 @@
 						params.callback(self);
 
 					//set default type
-					if (!self.data('type'))
+					if (typeof params.callback === 'function')
 						self.data('type', target.prop('type'));
 
 					//toggle type
