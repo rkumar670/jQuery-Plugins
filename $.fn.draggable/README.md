@@ -25,27 +25,28 @@ $.fn.draggable({
 *For example you could use the following code:*
 
 **Axis**
-
-Axis: xy
+<br />
+*Axis: xy*
 
 ```javascript
 $('#xy').draggable();
 ```
 
-Axis: x (dragging only one axis: x)
+*Axis: x (dragging only one axis: x)*
 
 ```javascript
 $('#x').draggable({axis: 'x'});
 ```
 
-Axis: y (dragging only one axis: y)
+*Axis: y (dragging only one axis: y)*
 
 ```javascript
 $('#y').draggable({axis: 'y'});
 ```
 
 **Prevent**
-Prevent dragging on the specified elements. Default values are: input, select, button.
+<br />
+*Prevent dragging on the specified elements. Default values are: input, select, button.*
 
 ```javascript
 $('#y').draggable({
@@ -56,7 +57,8 @@ $('#y').draggable({
 
 
 **Callback**
-Callback with start and end prorties.
+<br />
+*Callback with start and end prorties.*
 
 ```javascript
 $('#y').draggable({
@@ -73,7 +75,8 @@ $('#y').draggable({
 ```
 
 **Overflow**
-To set the css property overflow during the dragging?
+<br />
+*To set the css property overflow during the dragging?*
 
 ```javascript
 $('#y').draggable({
