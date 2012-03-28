@@ -61,6 +61,9 @@
 
 			var offset = $(this).offset();
 
+			if (typeof options.callback.start === 'function')
+				options.callback.start.call(_this);
+
 			$(document).bind({
 				mousemove: function (event) {
 					var axis = {
@@ -76,9 +79,6 @@
 							return event[edge] - (_event[edge] - offset[axis]) + 'px';
 						}
 					};
-
-					if (typeof options.callback.start === 'function')
-						options.callback.start.call(_this);
 
 					//set css property overflow
 					if (options.overflow)
