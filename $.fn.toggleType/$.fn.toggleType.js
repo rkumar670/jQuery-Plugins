@@ -8,8 +8,8 @@
 	 *
 	 * $('.checkbox').click(function() {
 	 *  	$(this).toggleType({
-	 * 			id : $('.password'),
-	 * 		    type: 'button',
+	 * 		   element : $('.password'),
+	 * 		   type: 'button',
 	 *			callback : function(obj) {
 	 *				return obj.is(":checked") ? 'text' : 'password';
 	 *			},
