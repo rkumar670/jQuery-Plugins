@@ -1,4 +1,4 @@
-# $.hasAttr
+# $.deselect()
 
 This module provides a complex deselection and can be used for drag & drop functions
 
