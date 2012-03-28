@@ -1,4 +1,4 @@
-# $.exists()
+# $.fn.exists()
 
 Filters elements of an array and returns only the existing HTML Elements
 
