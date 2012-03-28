@@ -113,30 +113,30 @@
 		});
 		return this;
 	};
+
+	/*!
+	 * $.deselect
+	 * Complex deselection
+	 * Use:
+	 * $(document).mousemove(function() {
+	 *    $.deselect();
+	 * });
+	 *
+	 * @author: Alexander Guinness
+	 * @version: 1.0
+	 * @this: {jQuery Object}
+	 * @return Object
+	 * @license: MIT
+	 * @date: Thu Jun 27 17:26:00 2011
+	 */
+
+	$.deselect = function () {
+		if (window.getSelection)
+			window.getSelection().removeAllRanges();
+
+		else if (document.selection && document.selection.clear)
+			document.selection.clear();
+
+		return this;
+	};
 })(jQuery);
-
-/*!
- * $.deselect
- * Complex deselection
- * Use:
- * $(document).mousemove(function() {
- *    $.deselect();
- * });
- *
- * @author: Alexander Guinness
- * @version: 1.0
- * @this: {jQuery Object}
- * @return Object
- * @license: MIT
- * @date: Thu Jun 27 17:26:00 2011
- */
-
-$.deselect = function () {
-	if (window.getSelection)
-		window.getSelection().removeAllRanges();
-
-	else if (document.selection && document.selection.clear)
-		document.selection.clear();
-
-	return this;
-};
