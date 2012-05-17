@@ -14,21 +14,27 @@
 	 *             alert(1);
 	 *         }
 	 *     },
+	 *     relative: 'offset'
 	 *     overflow: true
 	 * })
 	 *
 	 * @author: Alexander Guinness
 	 * @version: 1.0
 	 * @this: {jQuery Object}
-	 * @param: {Object} options -
+	 * @param: {Object} options - all options are optional!
 	 * {
-	 *     [ axis ], [, prevent ], , overflow], [, callback { [ start ], [, end] }]
+	 *     [ axis ], [, prevent ], [, overflow], [, relative ], [, callback { [ start ], [, end] }]
 	 *  }
 	 *
-	 * @option: {String} axis - Dragging only one axis. Valid values are: x, y, xy (default value).
-	 * @option: {Array} prevent - Prevent dragging on the specified elements. Default values are: input, select, button
-	 * @option: {Object} callback - Callback with start and end prorties.
-	 * @option: {Boolean} overflow - To set the css property overflow during the dragging?
+	 * @option: {String} axis [ x | y | xy] - Dragging only one axis.
+	 * Valid values are: x, y, xy (default value).
+	 * @option: {Array} prevent - Prevent dragging on the specified elements.
+	 * Default values are: input, select, button
+	 * @option: {Object} callback - Callback with start and end properties.
+	 * @option: {String} relative [ offset | position ] - Allows to retrieve the current position
+	 * of an element relative to the document or the offset parent. Default value is 'position',
+	 * also allowed 'offset'..
+	 * @option: {Boolean} overflow [ true | false ]- To set the css property overflow during the dragging?
 	 * @license: MIT
 	 * @date: Fri May 4 12:30:00 2012
 	 **/
@@ -45,7 +51,8 @@
 				start: null,
 				end: null
 			},
-			overflow: false
+			overflow: false,
+			relative: 'position' //, offset
 		}, options);
 
 		var overflow = $(document.body).css('overflow');
@@ -59,7 +66,10 @@
 			if ($(_event.target).is(options.prevent.join(',')))
 				return this;
 
-			var offset = $(this).offset();
+			var offset = $(this)[options.relative](),
+				overlay = $('<div style="position: fixed; top: 0; right: 0; bottom: 0; left: 0" />');
+
+			overlay.appendTo('body');
 
 			if (typeof options.callback.start === 'function')
 				options.callback.start.call(_this);
@@ -104,6 +114,8 @@
 					//restore css property overflow for body element
 					if (options.overflow)
 						document.body.style.overflow = overflow;
+
+					overlay.remove();
 
 					if (typeof options.callback.end === 'function')
 						options.callback.end.call(_this);

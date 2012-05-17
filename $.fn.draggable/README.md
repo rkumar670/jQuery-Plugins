@@ -14,10 +14,11 @@ $.fn.draggable({
 
 ```javascript
 /*
-@option: {String} axis - Dragging only one axis. Valid values are: x, y, xy (default value).
-@option: {Array} prevent - Prevent dragging on the specified elements. Default values are: input, select, button.
-@option: {Object} callback - Callback with start and end prorties.
-@option: {Boolean} overflow - To set the css property overflow during the dragging?
+@option: {String} axis [ x | y | xy] - Dragging only one axis. Valid values are: x, y, xy (default value).
+@option: {Array} prevent - Prevent dragging on the specified elements. Default values are: input, select, button
+@option: {Object} callback - Callback with start and end properties.
+@option: {String} relative [ offset | position ] - Allows to retrieve the current position of an element relative to the document or the offset parent. Default value is 'position', also allowed 'offset'..
+@option: {Boolean} overflow [ true | false ]- To set the css property overflow during the dragging?
 */
 ```
 
@@ -55,6 +56,16 @@ $('#y').draggable({
 });
 ```
 
+**Relative**
+<br />
+*relative [ offset | position ] - Allows to retrieve the current position of an element relative to the document or the offset parent. Default value is 'position', also allowed 'offset'*
+
+```javascript
+$('#y').draggable({
+	axis: 'y',
+	relative: 'offset'
+});
+```
 
 **Callback**
 <br />
