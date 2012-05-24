@@ -13,6 +13,9 @@ A small list of jQuery plugins for the daily work
 **$.hasAttr()**<br />
 *Determine whether any of the matched elements are assigned the given attribute.*<br />
 
+**$.order()**<br />
+*Specify the order of elements*<br />
+
 **$.paginator()**<br />
 *Plugin for scrolling pagination*<br />
 
