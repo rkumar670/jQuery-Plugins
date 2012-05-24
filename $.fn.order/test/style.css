@@ -1,0 +1,57 @@
+body {
+	font: 14px/18px arial,tahoma, verdana, serif;
+}
+
+h3 {
+	font: 600 16px/18px arial,tahoma, verdana, serif;
+}
+
+div, pre {
+	overflow: hidden;
+}
+
+pre {
+	background: #FCFCF8;
+	border: 1px dashed #7D7676;
+	clear: both;
+	color: #480E0C;
+	margin-bottom: 20px;
+	padding: 15px;
+	width: 325px;
+}
+
+ul {
+	margin: 25px 0px;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+	list-style: none;
+}
+
+#items li {
+	text-align: center;
+	padding-top: 35px;
+	width: 90px;
+	height: 50px;
+}
+
+li.a {background: #cbffb2;}
+li.b {background: #ffccc6;}
+li.c {background: #91f9fe;}
+
+#scheme p {
+	background: #F8F8F8;
+	width: 50px;
+}
+
+#scheme li {
+	margin-left: 10px;
+}
+
+#scheme li:first-letter {
+	font-weight: bold;
+}
