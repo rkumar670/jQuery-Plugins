@@ -15,7 +15,7 @@
 	* @param: {[Boolean]} bind - Binds the previous calls. Default value is true.
 	* If you don't need to keep the previous calls in the stack, set a false value for this option.
 	* @author: Alexander Guinness
-	* @version: 1.0
+	* @version: 1.1
 	* @return: {jQuery Object}
 	* @license: MIT
 	* @date: San Jan 01 10:00:00 2011
