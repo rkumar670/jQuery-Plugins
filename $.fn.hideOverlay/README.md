@@ -4,12 +4,13 @@ Hides the element by clicking on any part of the document (not including the ele
 This method is most useful for other jQuery plugins as well.
 
 ```javascript
-$.fn.hideOverlay([ method ], [, params ], [, callback ])
+$.fn.hideOverlay( [ method ], [, params ], [, callback ], [ bind ] )
 
 /*
 @param: {[String]} method - jQuery method. Default value is 'hide'
 @param: {[mixed]} params - Optional parameter associated with the jQuery method
 @param: {[Function]} callback - Callback function.
+@param: {[Boolean]} bind - Binds the previous calls. Default value is true. If you don't need to keep the previous calls in the stack, set a false value for this option.
 */
 ```
 
@@ -38,6 +39,12 @@ $('#id').hideOverlay('fadeIn', 300, function() {
 $('#id').hideOverlay('removeClass', 'active', function() {
    //...
 });
+```
+
+```javascript
+$('#id').hideOverlay('removeClass', 'active', function() {
+   //...
+}, false);
 ```
 
 **Simple example**

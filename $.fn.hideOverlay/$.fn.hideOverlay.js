@@ -7,33 +7,37 @@
 	* Use:
 	*  $('#id').hideOverlay('fadeIn', 300, function() {
 	*     //...
-	*  });
+	*  }, false);
 	*
 	* @param: {[String]} method - jQuery method. Default value is 'hide'
 	* @param: {[mixed]} params - Optional parameter associated with the jQuery method
-	* @param: {[Function]} callback - Callback function.
+	* @param: {[Function]} callback - Callback function
+	* @param: {[Boolean]} bind - Binds the previous calls. Default value is true.
+	* If you don't need to keep the previous calls in the stack, set a false value for this option.
 	* @author: Alexander Guinness
 	* @version: 1.0
 	* @return: {jQuery Object}
 	* @license: MIT
 	* @date: San Jan 01 10:00:00 2011
 	**/
-	$.fn.hideOverlay = function (method, params, callback) {
+	$.fn.hideOverlay = function (method, params, callback, bind) {
 		if (!this[0])
 			return this;
 
 		var self = this,
+
 		assign = function () {
-			if (!self.is(':visible'))
+			if (self.is(':hidden'))
 				return this;
 
-			return self[method || 'hide'](params || '', function() {
-				if (typeof callback === 'function')
-					callback.call(self);
-			});
+			self[method || 'hide'](params || '');
+
+			if (typeof callback === 'function')
+				callback.call(self);
 		};
 
-		$(document).bind({
+		return $(document)[bind ? 'one' : 'bind']
+		({
 			click: function (event) {
 				if (!$(event.target).andSelf().closest(self)[0])
 					assign.call(this);
@@ -43,7 +47,5 @@
 					assign.call(this);
 			}
 		});
-
-		return this;
 	};
 })(jQuery);
