@@ -36,8 +36,7 @@
 				callback.call(self);
 		};
 
-		return $(document)[bind ? 'one' : 'bind']
-		({
+		$(document)[bind ? 'one' : 'bind']({
 			click: function (event) {
 				if (!$(event.target).andSelf().closest(self)[0])
 					assign.call(this);
@@ -47,5 +46,6 @@
 					assign.call(this);
 			}
 		});
+		return this;
 	};
 })(jQuery);
