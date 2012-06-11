@@ -1,6 +1,7 @@
 # .sendForm()
 
-Submitting the form fields
+Generating and submitting form fields. <br />
+All fields with existing names are replaced with new fields!
 
 **Synopsis**
 
