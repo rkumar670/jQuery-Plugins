@@ -54,7 +54,7 @@ This method is most useful for other jQuery plugins as well. *<br />
 *Replace each class name in the set of matched elements*<br />
 
 **$.fn.sendForm()**<br />
-*Submitting a form fields*<br />
+*Generating and submitting form fields. All fields with existing names are replaced with new fields*<br />
 
 **$.fn.swap()**<br />
 *Swap elements*<br />
