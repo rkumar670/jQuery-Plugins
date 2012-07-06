@@ -1,4 +1,4 @@
-# .modalbox()
+# .modalbox() (unstable state)
 
 An implementation of non-standard modal window
 

@@ -1,4 +1,4 @@
-# $.paginator()
+# $.paginator() (unstable state)
 
 Plugin for scrolling pagination
 
