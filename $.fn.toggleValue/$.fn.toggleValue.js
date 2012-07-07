@@ -12,7 +12,9 @@
 	 **/
 	$.fn.toggleValue = function() {
 		this.bind('focus blur', function() {
-			this.value = this.value == this.defaultValue ? '' : this.value || this.defaultValue;
+			this.value = function(value, optional) {
+				return value == optional ? '' : value || optional;
+			}(this.value, this.defaultValue);
 		});
 		return this;
 	};
