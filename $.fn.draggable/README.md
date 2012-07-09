@@ -1,5 +1,7 @@
 # $.fn.draggable()
 
+WARNING: [unstable state]
+
 Sets or retrieves the object and its content in HTML
 
 **Synopsis**
