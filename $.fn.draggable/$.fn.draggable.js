@@ -49,7 +49,8 @@
 			prevent: ['input', 'select', 'button'],
 			callback: {
 				start: null,
-				end: null
+				end: null,
+				move: null
 			},
 			overflow: false,
 			relative: 'position' //, offset
@@ -71,6 +72,7 @@
 
 			overlay.appendTo('body');
 
+			// Callback [ start ]
 			if (typeof options.callback.start === 'function')
 				options.callback.start.call(_this);
 
@@ -93,6 +95,10 @@
 					//set css property overflow
 					if (options.overflow)
 						document.body.style.overflow = 'hidden';
+
+					// Callback [ move ]
+					if (typeof options.callback.move === 'function')
+						options.callback.move.call(_this);
 
 					//set axis
 					_this.css({
@@ -117,6 +123,7 @@
 
 					overlay.remove();
 
+					// Callback [ end ]
 					if (typeof options.callback.end === 'function')
 						options.callback.end.call(_this);
 				}
