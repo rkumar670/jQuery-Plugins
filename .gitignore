@@ -1,12 +1,53 @@
 # Ignore rules
 
+#--------------------------------
+# GCC
+#--------------------------------
+
 *.o
-*.pyc
+*.so
+*.lo
 *.a
-*~
-\#*
-*.log
-*.tmp
-*.bak
 a.out
 *.out
+
+#--------------------------------
+# Visual Studio
+#--------------------------------
+
+*.old
+*.sln
+*.suo
+*.ncb
+*.sdf
+*.log
+*.tlog
+*.idb
+*.pdb
+*.scc
+*.user
+*.filters
+*.vsscc
+*.vbproj
+*.vspscc
+*.csproj
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.lastbuildstate
+*.unsuccessfulbuild
+*.cache
+Debug
+
+#--------------------------------
+# Other
+#--------------------------------
+
+Makefile
+.idea
+*.pyc
+*~
+\#*
+*.tmp
+*.bak
+tmp
