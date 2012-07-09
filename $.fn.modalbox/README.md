@@ -1,4 +1,6 @@
-# .modalbox() (unstable state)
+# .modalbox()
+
+WARNING: [unstable state]
 
 An implementation of non-standard modal window
 
