@@ -31,6 +31,9 @@ A small list of jQuery plugins for the daily work
 **$.fn.attributes()**<br />
 *Returns an unsorted {object} of the attributes*<br />
 
+**$.fn.autocomplete()**<br />
+*Provides suggestions while you type into the field*<br />
+
 **$.fn.draggable()**<br />
 *A simple drag and drop plugin*<br />
 
