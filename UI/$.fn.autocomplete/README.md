@@ -86,7 +86,7 @@ $('#autocomplete').autocomplete({
 	
 	$(document).dblclick(function() {
 		$('#autocomplete').autocomplete('destroy');
-	});
+});
 ```
 
 * License
