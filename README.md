@@ -34,6 +34,9 @@ A small list of jQuery plugins for the daily work
 **$.fn.autocomplete()**<br />
 *Provides suggestions while you type into the field*<br />
 
+**$.fn.autoresize()**<br />
+*Autoresize text fields*<br />
+
 **$.fn.draggable()**<br />
 *A simple drag and drop plugin*<br />
 
