@@ -65,6 +65,9 @@
 	{
 		var self = this;
 
+		if (!self)
+			return this;
+
 		var param = $.extend({
 			source: '',
 			minimal: 0,
@@ -79,9 +82,9 @@
 			},
 			name: 'autocomplete',
 			css: {
-				top:   this.offset().top + this.outerHeight() + 'px',
-				left:  this.offset().left + 'px',
-				width: this.outerWidth()  + 'px'
+				top:   self.offset().top + this.outerHeight() + 'px',
+				left:  self.offset().left + 'px',
+				width: self.outerWidth()  + 'px'
 			},
 			list: function() {
 				return $('.' + param.name);
