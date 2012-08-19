@@ -65,7 +65,7 @@
 	{
 		var self = this;
 
-		if (!self)
+		if (!self[0])
 			return this;
 
 		var param = $.extend({
