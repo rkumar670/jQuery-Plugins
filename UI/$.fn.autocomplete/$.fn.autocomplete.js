@@ -63,6 +63,8 @@
 
 	$.fn.autocomplete = function(options)
 	{
+		var self = this;
+
 		var param = $.extend({
 			source: '',
 			minimal: 0,
