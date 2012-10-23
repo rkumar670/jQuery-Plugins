@@ -10,8 +10,8 @@
 	 * Licensed under the MIT
 	 * @author: Alexander Guinness
 	 * @version: 1.1
-	 * @params {attr} Class name presented by String
-	 * @params {element} Any attribute or tag presented by String
+	 * @params {String} attr - class name presented by String
+	 * @params {Object | String} - selector - any attribute or tag presented by String
 	 * @this: {jQuery Object}
 	 * @return: {jQuery Object}
 	 * @date: Fri Aug 05 14:02:00 2011
