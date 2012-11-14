@@ -27,7 +27,7 @@
 		var params = $.extend({
 			param: null,
 			query: null
-		}, $.isPlainObject(options) ? options : {}),
+		}, options),
 			object = {};
 
 		$.each((params.query || window.location.search).split('&'), function(i) {
