@@ -16,12 +16,6 @@ A small list of jQuery plugins for the daily work
 **$.order()**<br />
 *Specify the order of elements*<br />
 
-**$.paginator()**<br />
-*Plugin for scrolling pagination*<br />
-
-**$.preload()**<br />
-*This method provides a way to preload images*<br />
-
 **$.queryURL()**<br />
 *Returns the parameters of the current or specified URL*<br />
 
@@ -30,15 +24,6 @@ A small list of jQuery plugins for the daily work
 
 **$.fn.attributes()**<br />
 *Returns an unsorted {object} of the attributes*<br />
-
-**$.fn.autocomplete()**<br />
-*Provides suggestions while you type into the field*<br />
-
-**$.fn.autoresize()**<br />
-*Autoresize text fields*<br />
-
-**$.fn.draggable()**<br />
-*A simple drag and drop plugin*<br />
 
 **$.fn.embed()**<br />
 *Returns a cross-browser <object /> tag to embed the flash video in html code*
@@ -49,9 +34,6 @@ This method is most useful for other jQuery plugins as well. *<br />
 
 **$.fn.exists()**<br />
 *Filters elements of an array and returns only the existing HTML Elements*<br />
-
-**$.fn.modalbox()**<br />
-*An implementation of non-standard modal window*<br />
 
 **$.fn.outerHTML()**<br />
 *Sets or retrieves the object and its content in HTML*<br />
@@ -76,6 +58,27 @@ This method is most useful for other jQuery plugins as well. *<br />
 
 **$.fn.toggleValue()**<br />
 *This method intended to aid the user with data entry like [placeholder] (http://dev.w3.org/html5/spec/Overview.html#the-placeholder-attribute)*<br />
+
+
+##UI
+
+**$.fn.autocomplete()**<br />
+*Provides suggestions while you type into the field*<br />
+
+**$.fn.autoresize()**<br />
+*Autoresize text fields*<br />
+
+**$.fn.draggable()**<br />
+*A simple drag and drop plugin*<br />
+
+**$.fn.modalbox()**<br />
+*An implementation of non-standard modal window*<br />
+
+**$.paginator()**<br />
+*Plugin for scrolling pagination*<br />
+
+**$.preload()**<br />
+*This method provides a way to preload images*<br />
 
 
 ##.
