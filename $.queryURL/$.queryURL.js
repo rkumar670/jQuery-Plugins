@@ -30,7 +30,7 @@
 		}, options),
 			object = {};
 
-		$.each((params.query || window.location.search).split('&'), function(i) {
+		$.each((params.query || window.location.search).split(/&|\?/), function(i) {
 			var split = this.split('=');
 			object[split[0][!i && split[0][0] == '?' ? 'slice' : 'toString'](1)] = split[1];
 		});
