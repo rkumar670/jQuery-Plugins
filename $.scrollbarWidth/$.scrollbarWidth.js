@@ -9,6 +9,9 @@
 	* @return: {Number}
 	* @license: MIT
 	* @date: Mon Aug 14 13:16:00 2012
+	* 
+	* TODO: Mac OS
+	* ::-webkit-scrollbar { -webkit-appearance: none; }
 	**/
 	$.scrollbarWidth = function () {
 		var scrollbar = $('<p />', {
